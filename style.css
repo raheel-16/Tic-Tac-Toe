@@ -1,0 +1,54 @@
+body {
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    background-color: white;
+    height: 50vh;
+    width: 50vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.main > .display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    position: relative;
+    border-style: solid;
+    border-color: black;
+}
+
+.buttons {
+    gap: 20px;
+    padding-left: 300px;
+    padding-bottom: 100px;
+}
+
+.button {
+    height: 25px;
+    width: 60px;
+}
+
+/* removing bored for edges */
+.display:nth-child(1), .display:nth-child(2), .display:nth-child(3) {
+    border-top: none;
+}
+
+.display:nth-child(1), .display:nth-child(4), .display:nth-child(7) {
+    border-left: none;
+}
+
+.display:nth-child(7), .display:nth-child(8), .display:nth-child(9) {
+    border-bottom: none;
+}
+
+.display:nth-child(3), .display:nth-child(6), .display:nth-child(9) {
+    border-right: none;
+} 
